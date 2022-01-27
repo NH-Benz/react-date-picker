@@ -6,10 +6,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "sample/**",
-        "test/**"
-      ],
+      "files": ["sample/**", "test/**"],
       "rules": {
         "import/no-unresolved": "off"
       }
