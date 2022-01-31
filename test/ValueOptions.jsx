@@ -20,7 +20,7 @@ export default function ValueOptions({ setValue, value }) {
           id="date"
           onChange={onChange}
           type="date"
-          value={date ? getISOLocalDate(date) : ''}
+          value={date ? getISOLocalDate(date.setFullYear(date.getFullYear() + 543 )) : ''}
         />
         &nbsp;
         <button onClick={() => setValue(null)} type="button">
