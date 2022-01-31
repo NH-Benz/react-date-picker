@@ -289,7 +289,7 @@ export default class DateInput extends PureComponent {
     const datePieceReplacements = ['y', 'M', 'd'];
 
     function formatDatePiece(name, dateToFormat) {
-      return getFormatter({ useGrouping: false, [name]: 'numeric' })(locale, dateToFormat).match(
+      return getFormatter({ useGrouping: false })(locale, dateToFormat).match(
         /\d{1,}/,
       );
     }
